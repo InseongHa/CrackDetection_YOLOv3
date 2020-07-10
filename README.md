@@ -10,4 +10,5 @@
 
 > 13 = 378(frame수) / 32(yolo.py참고), 3은 그거고, 6은 모름
 
-How to solve?
+>> 이용하려던 프레임 추출 코드는 아무것도 입력돼있지 않은 깨끗한 video에서 frame단위로 추출할 때, bounding box를 기록하는 코드였다.
+>> yolo model을 이용해 video에 이미 bounding box를 찍어냈으므로 위 프레임 추출 코드를 이용할 필요가 없었다.
