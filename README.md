@@ -14,7 +14,7 @@
 ### ▶ 사용기술
 * 균열 탐지를 위한 알고리즘으로는 **YOLOv3 Tiny version**(*<https://github.com/qqwweee/keras-yolo3>*)를 사용하였습니다.
 * 기존의 YOLOv3는 Darknet 프레임워크에서 수행해야 하지만, 범용성을 위해 Keras로 변환하는 작업을 거친 버전을 선택했습니다.
-> tiny yolo는 yolo에 비해 정확도가 떨어지지만 크기가 작고 빠르다는 장점을 가집니다. 모바일 환경에서 수행하는 것이 목적이었기에 tiny yolo를 사용했습니다.
++ tiny yolo는 yolo에 비해 정확도가 떨어지지만 크기가 작고 빠르다는 장점을 가집니다. 모바일 환경에서 수행하는 것이 목적이었기에 tiny yolo를 사용했습니다.
 * 입력된 이미지 및 동영상에서 균열을 탐지한 후, 해당 균열에 대한 폭을 계산하는 방식으로는 Binarization, Skeletonization, Edge Detection 과정을 수행했습니다.
 
 </br>
@@ -36,7 +36,7 @@
 #### 1. Darknet 프레임워크 형식으로 구성된 YOLOv3 모델을 Keras 환경에서 구동할 수 있도록 convert 합니다.
 #### 2. Transfer Learning 과정을 통해 기존의 model을 목적에 맞게끔 re-training 시킵니다.
 #### 3. 성능 확인을 위해 이미지 한 장에 대해 inference 과정을 수행합니다.
-> Convesion_and_TransferLearning.ipynb 부분
+> Convesion_and_TransferLearning.ipynb    
 > "convert.py"와 "train.py"를 결합한 내용입니다.
 
 </br>
