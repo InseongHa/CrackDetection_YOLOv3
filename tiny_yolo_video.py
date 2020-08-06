@@ -52,8 +52,9 @@ if __name__ == '__main__':
     Command line positional arguments -- for video detection mode
     '''
     parser.add_argument(
-        "--input", nargs='?', type=int, required=False, default='./path2your_video',
+        "--input", nargs='?', type=str, required=False, default='./path2your_video',
         help = "Video input path"
+        # webcam을 사용하고 싶으면 type=int로 수정
     )
 
     parser.add_argument(
