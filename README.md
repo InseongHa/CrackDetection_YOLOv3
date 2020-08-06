@@ -58,3 +58,24 @@ positional arguments:
   --input        Video input path
   --output       Video output path
 ```
+
+</br>
+
+#### 5. Binarization → Skeletonization 의 과정을 순서대로 수행합니다.
+* 5-1. 전처리과정에 대한 code를 "yolo.py"에 추가해 동영상을 입력하면 균열을 탐지하는 동시에 폭을 측정하고 추출할 수 있도록 통합했습니다.
+```
+    def crop_image(self, image, orig_image, saving_bounding_boxes): 
+    ...
+    def binarization_skeletonize_(self, cropped_frame):
+    ...
+```
+</br>
+
+## ◆ Usage
+### ▶ 설치
+> 
+
+</br>
+
+### ▶ 이미지 데이터셋
+>
