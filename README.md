@@ -34,6 +34,7 @@
 ![img](https://user-images.githubusercontent.com/59737066/89514324-ae166100-d810-11ea-87d5-d4045869651f.png)
 
 #### 1. Darknet 프레임워크 형식으로 구성된 YOLOv3 모델을 Keras 환경에서 구동할 수 있도록 convert 합니다.
+#### 2. Training시킬 이미지들에 대해 labelling을 진행합니다. link: 
 #### 2. Transfer Learning 과정을 통해 기존의 model을 목적에 맞게끔 re-training 시킵니다.
 #### 3. 성능 확인을 위해 이미지 한 장에 대해 inference 과정을 수행합니다.
 > Convesion_and_TransferLearning.ipynb    
