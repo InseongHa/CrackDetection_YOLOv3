@@ -42,7 +42,7 @@
 </br>
 
 #### 4. 움직이는 동영상에서 제대로 수행하는 지 확인합니다.
-> 4-1. 이 과정에서는 webcam을 우선해서 테스트했기 때문에 GoogleColaboratory를 이용하지 않고 local환경에서 anaconda를 이용했습니다.
+* 4-1. 이 과정에서는 webcam을 우선해서 테스트했기 때문에 GoogleColaboratory를 이용하지 않고 local환경에서 anaconda를 이용했습니다.
 > "tiny_yolo_video.py"에서
 ```
     parser.add_argument(
@@ -52,7 +52,7 @@
     )
 ```
 에 대해 수정사항이 필요합니다.
-> 4-2. 다음과 같은 명령어를 통해 수행합니다.
+* 4-2. 다음과 같은 명령어를 통해 수행합니다.
 ```
 positional arguments:
   --input        Video input path
