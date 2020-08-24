@@ -35,15 +35,17 @@
 
 #### 1. Darknet 프레임워크 형식으로 구성된 YOLOv3 모델을 Keras 환경에서 구동할 수 있도록 convert 합니다.
 #### 2. Training시킬 이미지들에 대해 labelling을 진행합니다. (*<https://github.com/tzutalin/labelimg>*)
-#### 2. Transfer Learning 과정을 통해 기존의 model을 목적에 맞게끔 re-training 시킵니다.
-#### 3. 성능 확인을 위해 이미지 한 장에 대해 inference 과정을 수행합니다.
-> Convesion_and_TransferLearning.ipynb    
+* 2-1. 5,000장의 특정재질 균열 이미지에 대해 labeling을 진행했습니다.
+#### 3. Transfer Learning 과정을 통해 기존의 model을 목적에 맞게끔 re-training 시킵니다.
+* 3-1. "train.py"를 이용해 re-training할 필요 없이 model을 만들 수 있습니다.
+#### 4. 성능 확인을 위해 이미지 한 장에 대해 inference 과정을 수행합니다.
+> Convesion_and_TransferLearning.ipynb
 > "convert.py"와 "train.py"를 결합한 내용입니다.
 
 </br>
 
-#### 4. 움직이는 동영상에서 제대로 수행하는 지 확인합니다.
-* 4-1. 이 과정에서는 webcam을 우선해서 테스트했기 때문에 GoogleColaboratory를 이용하지 않고 local환경에서 anaconda를 이용했습니다.
+#### 5. 움직이는 동영상에서 제대로 수행하는 지 확인합니다.
+* 5-1. 이 과정에서는 webcam을 우선해서 테스트했기 때문에 GoogleColaboratory를 이용하지 않고 local환경에서 anaconda를 이용했습니다.
 > "tiny_yolo_video.py"에서
 ```
     parser.add_argument(
@@ -53,7 +55,7 @@
     )
 ```
 에 대해 수정사항이 필요합니다.
-* 4-2. 다음과 같은 명령어를 통해 수행합니다.
+* 5-2. 다음과 같은 명령어를 통해 수행합니다.
 ```
 positional arguments:
   --input        Video input path
@@ -62,8 +64,8 @@ positional arguments:
 
 </br>
 
-#### 5. Binarization → Skeletonization 의 과정을 순서대로 수행합니다.
-* 5-1. 전처리과정에 대한 code를 "yolo.py"에 추가해 동영상을 입력하면 균열을 탐지하는 동시에 폭을 측정하고 추출할 수 있도록 통합했습니다.
+#### 6. Binarization → Skeletonization 의 과정을 순서대로 수행합니다.
+* 6-1. 전처리과정에 대한 code를 "yolo.py"에 추가해 동영상을 입력하면 균열을 탐지하는 동시에 폭을 측정하고 추출할 수 있도록 통합했습니다.
 ```
     def crop_image(self, image, orig_image, saving_bounding_boxes): 
     ...
